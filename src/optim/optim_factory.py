@@ -3,7 +3,7 @@ Hacked together by / Copyright 2020 Ross Wightman
 """
 import torch
 from torch import optim as optim
-from timm.optim import Nadam, RMSpropTF, AdamW, RAdam, NovoGrad, NvNovoGrad, Lookahead, AdamP, SGDP
+from src.optim import Nadam, RMSpropTF, AdamW, RAdam, NovoGrad, NvNovoGrad, Lookahead, AdamP, SGDP
 from collections.abc import Iterable
 import torch.nn as nn
 try:

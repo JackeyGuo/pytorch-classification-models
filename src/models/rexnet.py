@@ -6,14 +6,14 @@ https://arxiv.org/abs/2007.00992
 Adapted from original impl at https://github.com/clovaai/rexnet
 Copyright (c) 2020-present NAVER Corp. MIT license
 
-Changes for timm, feature extraction, and rounded channel variant hacked together by Ross Wightman
+Changes for src, feature extraction, and rounded channel variant hacked together by Ross Wightman
 Copyright 2020 Ross Wightman
 """
 
 import torch.nn as nn
 from math import ceil
 
-from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+from src.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from .helpers import build_model_with_cfg
 from .layers import ClassifierHead, create_act_layer, ConvBnAct
 from .registry import register_model

@@ -15,10 +15,10 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 from torchvision import transforms
-from timm.data.transforms import LetterBoxResize
-from timm.models import create_model
-from timm.data import Dataset, create_loader
-from timm.data.transforms_factory import get_test_transform
+from src.data.transforms import LetterBoxResize
+from src.models import create_model
+from src.data import Dataset, create_loader
+from src.data.transforms_factory import get_test_transform
 import glob
 import cv2
 import shutil

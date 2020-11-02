@@ -2,16 +2,15 @@ import argparse
 import time
 import yaml
 from datetime import datetime
-from contextlib import suppress
 import torch.nn as nn
 import torchvision.utils
-from timm.data import Dataset, create_loader, resolve_data_config, Mixup, FastCollateMixup
-from timm.models import create_model, resume_checkpoint
-from timm.utils import *
-from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
-from timm.optim import create_optimizer
-from timm.scheduler import create_scheduler
 from torch.nn import functional as F
+from src.data import Dataset, create_loader, resolve_data_config, Mixup, FastCollateMixup
+from src.models import create_model, resume_checkpoint
+from src.utils import *
+from src.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
+from src.optim import create_optimizer
+from src.scheduler import create_scheduler
 from eval_map import eval_map
 import json
 

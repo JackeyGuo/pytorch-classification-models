@@ -14,9 +14,9 @@ import torch
 import cv2
 import shutil
 import json
-from timm.models import create_model, apply_test_time_pool, load_checkpoint
-from timm.data import Dataset, create_loader, resolve_data_config
-from timm.utils import AverageMeter, setup_default_logging, MyEncoder
+from src.models import create_model, apply_test_time_pool, load_checkpoint
+from src.data import Dataset, create_loader, resolve_data_config
+from src.utils import AverageMeter, setup_default_logging, MyEncoder
 from torch.nn import functional as F
 import glob
 

@@ -2,12 +2,12 @@ import argparse
 import glob
 import math
 import time
-from timm.models import create_model
-from timm.data import resolve_data_config
-from timm.data.dataset import Dataset, TestDataset
-from timm.data.transforms import LetterBoxResize, RandomChoiceRotate
-from timm.data.auto_augment import auto_augment_transform
-from timm.utils import softmax, MyEncoder
+from src.models import create_model
+from src.data import resolve_data_config
+from src.data.dataset import Dataset, TestDataset
+from src.data.transforms import LetterBoxResize, RandomChoiceRotate
+from src.data.auto_augment import auto_augment_transform
+from src.utils import softmax, MyEncoder
 from predictor import *
 from PIL import Image
 import torchvision.transforms as transforms

@@ -16,7 +16,7 @@ Hacked together by / Copyright 2020 Ross Wightman
 import numpy as np
 import torch.nn as nn
 
-from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+from src.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from .helpers import build_model_with_cfg
 from .layers import ClassifierHead, AvgPool2dSame, ConvBnAct, SEModule, DropPath
 from .registry import register_model

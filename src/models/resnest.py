@@ -4,12 +4,12 @@ Paper: `ResNeSt: Split-Attention Networks` - https://arxiv.org/abs/2004.08955
 
 Adapted from original PyTorch impl w/ weights at https://github.com/zhanghang1989/ResNeSt by Hang Zhang
 
-Modified for torchscript compat, and consistency with timm by Ross Wightman
+Modified for torchscript compat, and consistency with src by Ross Wightman
 """
 import torch
 from torch import nn
 
-from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+from src.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from .helpers import build_model_with_cfg
 from .layers import SplitAttnConv2d
 from .registry import register_model

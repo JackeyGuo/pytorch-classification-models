@@ -4,7 +4,7 @@ and ports of Gluon variations (https://github.com/dmlc/gluon-cv/blob/master/gluo
 by Ross Wightman
 """
 
-from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+from src.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from .helpers import build_model_with_cfg
 from .layers import SEModule
 from .registry import register_model

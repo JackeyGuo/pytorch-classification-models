@@ -12,7 +12,7 @@ import torch.nn.functional as F
 import torch.utils.checkpoint as cp
 from torch.jit.annotations import List
 
-from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+from src.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from .helpers import build_model_with_cfg
 from .layers import BatchNormAct2d, create_norm_act, BlurPool2d, create_classifier
 from .registry import register_model

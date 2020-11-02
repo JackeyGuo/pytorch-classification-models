@@ -1,6 +1,6 @@
 import argparse
 from predictor import *
-from timm.data.dataset import Dataset, TestDataset
+from src.data.dataset import Dataset, TestDataset
 from eval_map import eval_map
 import time
 from sklearn.metrics import accuracy_score

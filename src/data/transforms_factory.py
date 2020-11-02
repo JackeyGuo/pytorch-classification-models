@@ -1,5 +1,5 @@
 """ Transforms Factory
-Factory methods for building image transforms for use with TIMM (PyTorch Image Models)
+Factory methods for building image transforms for use with src (PyTorch Image Models)
 
 Hacked together by / Copyright 2020 Ross Wightman
 """
@@ -8,11 +8,11 @@ import math
 import torch
 from torchvision import transforms
 
-from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD, DEFAULT_CROP_PCT
-from timm.data.auto_augment import rand_augment_transform, augment_and_mix_transform, auto_augment_transform
-from timm.data.transforms import _pil_interp, RandomResizedCropAndInterpolation, ToNumpy, ToTensor, LetterBoxResize, \
+from src.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD, DEFAULT_CROP_PCT
+from src.data.auto_augment import rand_augment_transform, augment_and_mix_transform, auto_augment_transform
+from src.data.transforms import _pil_interp, RandomResizedCropAndInterpolation, ToNumpy, ToTensor, LetterBoxResize, \
     imgPadding, RandomChoiceRotate, RandomGaussianNoise, RandomSaltPepperNoise
-from timm.data.random_erasing import RandomErasing
+from src.data.random_erasing import RandomErasing
 
 
 def transforms_imagenet_train(

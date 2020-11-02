@@ -6,7 +6,7 @@ https://arxiv.org/abs/1910.03151
 
 Original ECA model borrowed from https://github.com/BangguWu/ECANet
 
-Modified circular ECA implementation and adaption for use in timm package
+Modified circular ECA implementation and adaption for use in src package
 by Chris Ha https://github.com/VRandme
 
 Original License:

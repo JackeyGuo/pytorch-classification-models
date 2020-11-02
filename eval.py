@@ -1,10 +1,10 @@
 import argparse
-from timm.models import create_model
-from timm.data import resolve_data_config
+from src.models import create_model
+from src.data import resolve_data_config
 from predictor import *
-from timm.data.dataset import Dataset, TestDataset
-from timm.data.loader import create_loader
-from timm.utils import MyEncoder
+from src.data.dataset import Dataset, TestDataset
+from src.data.loader import create_loader
+from src.utils import MyEncoder
 import glob
 from eval_map import eval_map
 import time

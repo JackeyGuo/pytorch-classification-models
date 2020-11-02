@@ -4,7 +4,7 @@ Paper: `ResNeSt: Split-Attention Networks` - /https://arxiv.org/abs/2004.08955
 
 Adapted from original PyTorch impl at https://github.com/zhanghang1989/ResNeSt
 
-Modified for torchscript compat, performance, and consistency with timm by Ross Wightman
+Modified for torchscript compat, performance, and consistency with src by Ross Wightman
 """
 import torch
 import torch.nn.functional as F
